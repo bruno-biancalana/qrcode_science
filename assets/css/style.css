@@ -77,9 +77,9 @@ body {
 .form-header h1::after {
     content: '';
     display: block;
-    width: 5rem;
+    width: 12rem;
     height: 0.3rem;
-    background-color: #6c63ff;
+    background-color: red;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
@@ -159,7 +159,7 @@ body {
 }
 
 .continue-button button:hover {
-    background-color: #6b63fff1;
+    background-color: red;
 }
 
 .continue-button button a {
