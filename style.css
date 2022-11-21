@@ -37,7 +37,7 @@ body {
     width: 100%;
 }
 
-.instagram-continue {
+.box-principal {
     display: flex;
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
@@ -146,7 +146,7 @@ body {
         display: none;
     }
 
-    .instagram-continue {
+    .box-principal {
         width: 100%;
     }
     
