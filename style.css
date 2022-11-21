@@ -25,14 +25,14 @@ body {
     height: 100vh;
 }
 
-.instagram-phone {
+.index-image {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.instagram-phone img {
+.index-image img {
     height: 30rem;
     width: 100%;
 }
@@ -142,7 +142,7 @@ body {
         width: 90%;
     }
 
-    .instagram-phone {
+    .index-image {
         display: none;
     }
 
