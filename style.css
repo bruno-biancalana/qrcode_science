@@ -17,7 +17,7 @@ body {
     justify-content: center;
 }
 
-.instagram-wrapper {
+.science-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -132,13 +132,13 @@ body {
 
 
 @media (max-width: 1024px) {
-    .instagram-wrapper {
+    .science-wrapper {
         width: 90%;
     }
 }
 
 @media (max-width: 650px) {
-    .instagram-wrapper {
+    .science-wrapper {
         width: 90%;
     }
 
