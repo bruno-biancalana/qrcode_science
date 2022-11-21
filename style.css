@@ -65,7 +65,7 @@ body {
     height: 3rem;
 }
 
-.profile-photo {
+.logo-index {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +73,7 @@ body {
     overflow: hidden;
 }
 
-.profile-photo img {
+.logo-index img {
     height: 6rem;
 }
 
