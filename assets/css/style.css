@@ -151,5 +151,6 @@ body {
   }
 
   .menu img {
-    width: 80px;
+    margin-top: 0.5rem;
+    width: 15rem;
   }
