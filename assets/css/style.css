@@ -113,6 +113,9 @@ body {
 }
 
 @media screen and (max-width: 1330px) {
+    .continue-button button {
+        margin-top: 0.5rem;
+    }
     .container {
         width: 50%;
         margin-top: 5rem;
@@ -123,10 +126,11 @@ body {
 }
 
 @media screen and (max-width: 1064px) {
+   
     .container {
         width: 90%;
         height: auto;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .input-group {
         flex-direction: column;
