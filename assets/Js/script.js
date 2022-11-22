@@ -4,5 +4,5 @@ function botao(){
     icon: 'success',
     title: 'Dados enviados com sucesso',
     showConfirmButton: false,
-    timer: 1500
+    timer: 3000
   })}
