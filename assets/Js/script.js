@@ -1,6 +1,6 @@
 function botao(){
   Swal.fire({
-    position: 'top-end',
+    position: 'top-center',
     icon: 'success',
     title: 'Dados enviados com sucesso',
     showConfirmButton: false,
