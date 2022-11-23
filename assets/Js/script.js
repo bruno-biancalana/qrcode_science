@@ -1,23 +1,26 @@
-//Alert inicial da página Form (chamada na linha 13) ->
-function mensagem(){
-Swal.fire({
-  title: '<strong>POLÍTICA DE ARMAZENAMENTO E PRIVACIDADE DE DADOS</strong>',
+//Bloco do alert página form (chamada na linha 13)->
+async function mensagem(){
+const { value: accept } = await Swal.fire({
+  title: '<strong>Politica de armazenamento e privacidade de dados</strong>',
   icon: 'info',
   html:
     'Acesse a política de armazenamento e privacidade de dados neste ' +
-    '<a href="https://svriglobal.com/wp-content/uploads/2022/07/Politica-de-Privacidade-e-Cookies-SVRI.pdf" target="blank" >link.</a>' + ' Ao selecionar a opção "Sim", você concorda com os termos de nossa política de privacidade de dados.',
-  showCloseButton: true,
-  showCancelButton: true,
-  focusConfirm: true,
-  cancelButtonText:
-    '<i class="fa fa-thumbs-down"></i> Não',
-  cancelButtonAriaLabel: 'Thumbs down',
+    '<a href="https://svriglobal.com/wp-content/uploads/2022/07/Politica-de-Privacidade-e-Cookies-SVRI.pdf" target="blank" >link.</a>' + ' Ao marcar a opção abaixo, você concorda com os termos de nossa política de privacidade de dados.',
+  input: 'checkbox',
+  inputValue: 1,
+  inputPlaceholder:
+    'Eu concordo com os termos de Política de Privacidade de dados da Science Valley',
   confirmButtonText:
-    '<i class="fa fa-thumbs-up"></i> Sim',
-  confirmButtonAriaLabel: 'Thumbs up, great!',
-})}
-//->
+    'Continue <i class="fa fa-arrow-right"></i>',
+  inputValidator: (result) => {
+    return !result && 'Você precisa concordar com os termos para prosseguir.'
+  }
+})
 
+if (accept) {
+  Swal.fire('Você concordou com os termos. Insira seus dados e uma equipe entrará em contato.')
+}}
+//Final do alert->
 
 
 
