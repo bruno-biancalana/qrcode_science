@@ -1,3 +1,4 @@
+//Alert inicial da página Form (chamada na linha 13) ->
 function mensagem(){
 Swal.fire({
   title: '<strong>A science Valley <u>não</u> compartilhará suas informações com terceiros</strong>',
@@ -15,11 +16,12 @@ Swal.fire({
     '<i class="fa fa-thumbs-down"></i>',
   cancelButtonAriaLabel: 'Thumbs down'
 })}
+//->
 
 
 
 
-//Alert após envio de dados->
+//Alert após envio de dados na página Form (chamada na linha 50) ->
 function botao(){
   Swal.fire({
     position: 'top-center',
