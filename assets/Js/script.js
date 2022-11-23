@@ -1,3 +1,13 @@
+/*
+*Coded by: Bruno Biancalana
+*Coded for: Science Valley Research Institute 
+*GitHub: https://github.com/bruno-biancalana
+*This GitRepositorie: https://github.com/bruno-biancalana/qrcode_science
+
+                            *** FUNÇÕES ALERT/POPUP ** 
+*/
+
+
 //Bloco do alert página form (chamada na linha 13)->
 async function mensagem(){
 const { value: accept } = await Swal.fire({
