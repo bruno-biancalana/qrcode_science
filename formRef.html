@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./IMG/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/styleRef.css">
+    <title>Cadastro</title>
+</head>
+
+<body onload="mensagem()">
+    <div class="menu">
+        <a href="https://testescienceqr.netlify.app/">
+        <img src="/IMG/sciencelogo_2.png" alt="logo science" /></a>
+    </div>
+
+    <div class="container">
+        <div class="form">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre um referenciado</h1>
+                    </div>
+                </div>
+
+                <!--Conexão com api Sheetmonkey + inicio do formulário-->
+                <form action="https://api.sheetmonkey.io/form/uaFX4H89FWpfT3c5s59DFP" method="post">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite o primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite o sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite o e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="seuNome">Quem indicou</label>
+                        <input id="seuNome" type="text" name="seuNome" placeholder="Digite seu Nome" required>
+                    </div>
+                    
+                <div class="continue-button">
+                    <button onclick="botao()">Enviar </button>
+                </div>
+            </form>
+            <!--Fim do formulário-->
+        </div>
+    </div>
+
+    <!-- Bloco Api whatsapp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/551140408670?text=Dúvidas" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+    z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+    <!--/Bloco Api whatsapp-->
+    <script src="/assets/Js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

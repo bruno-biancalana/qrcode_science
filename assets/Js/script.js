@@ -3,6 +3,7 @@ async function mensagem(){
 const { value: accept } = await Swal.fire({
   title: '<strong>Politica de armazenamento e privacidade de dados</strong>',
   icon: 'info',
+  iconColor: 'yellow',
   html:
     'Acesse a política de armazenamento e privacidade de dados neste ' +
     '<a href="https://svriglobal.com/wp-content/uploads/2022/07/Politica-de-Privacidade-e-Cookies-SVRI.pdf" target="blank" >link.</a>' + ' Ao marcar a opção abaixo, você concorda com os termos de nossa política de privacidade de dados.',
