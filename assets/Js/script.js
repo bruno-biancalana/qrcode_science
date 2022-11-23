@@ -1,7 +1,7 @@
 //Alert inicial da página Form (chamada na linha 13) ->
 function mensagem(){
 Swal.fire({
-  title: '<strong>A science Valley <u>não</u> compartilhará suas informações com terceiros</strong>',
+  title: '<strong>A Science Valley <u>não</u> compartilhará suas informações com terceiros</strong>',
   icon: 'info',
   html:
     'Acesse a política de armazenamento e privacidade de dados neste ' +
