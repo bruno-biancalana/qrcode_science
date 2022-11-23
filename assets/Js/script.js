@@ -16,7 +16,7 @@ const { value: accept } = await Swal.fire({
   iconColor: 'yellow',
   html:
     'Acesse a política de armazenamento e privacidade de dados neste ' +
-    '<a href="https://svriglobal.com/wp-content/uploads/2022/07/Politica-de-Privacidade-e-Cookies-SVRI.pdf" target="blank" >link.</a>' + ' Ao marcar a opção abaixo, você concorda com os termos de nossa política de privacidade de dados.',
+    '<a href="https://svriglobal.com/wp-content/uploads/2022/07/Politica-de-Privacidade-e-Cookies-SVRI.pdf" target="blank" ><strong>link</strong>.</a>' + ' Ao marcar a opção abaixo, você concorda com os termos de nossa política de privacidade de dados.',
   input: 'checkbox',
   inputValue: 1,
   inputPlaceholder:
