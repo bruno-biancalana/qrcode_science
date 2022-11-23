@@ -5,16 +5,16 @@ Swal.fire({
   icon: 'info',
   html:
     'Acesse a política de armazenamento e privacidade de dados neste ' +
-    '<a href="https://svriglobal.com/wp-content/uploads/2022/07/Politica-de-Privacidade-e-Cookies-SVRI.pdf">link.</a> ',
+    '<a href="https://svriglobal.com/wp-content/uploads/2022/07/Politica-de-Privacidade-e-Cookies-SVRI.pdf" target="blank" >link.</a> ',
   showCloseButton: true,
   showCancelButton: true,
-  focusConfirm: false,
-  confirmButtonText:
-    '<i class="fa fa-thumbs-up"></i> Great!',
-  confirmButtonAriaLabel: 'Thumbs up, great!',
+  focusConfirm: true,
   cancelButtonText:
-    '<i class="fa fa-thumbs-down"></i>',
-  cancelButtonAriaLabel: 'Thumbs down'
+    '<i class="fa fa-thumbs-down"></i> Retornar',
+  cancelButtonAriaLabel: 'Thumbs down',
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up"></i> Prosseguir!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
 })}
 //->
 
