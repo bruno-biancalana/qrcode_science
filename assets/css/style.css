@@ -113,6 +113,7 @@ body {
 }
 
 @media screen and (max-width: 1330px) {
+    
     .continue-button button {
         margin-top: 0.5rem;
     }
@@ -126,7 +127,9 @@ body {
 }
 
 @media screen and (max-width: 1064px) {
-   
+    .title img{
+        width: 100%;
+    }
     .container {
         width: 90%;
         height: auto;
