@@ -11,6 +11,15 @@
 
 <body>
   <h1>teste google</h1>
+  <script>
+    window.onload = function () {
+      google.accounts.id.initialize({
+        client_id: '983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com',
+        callback: handleCredentialResponse
+      });
+      google.accounts.id.prompt();
+    };
+  </script>
 
   <div id="g_id_onload"
          data-client_id="983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com"
@@ -42,7 +51,7 @@
 
 
 
-  <script src="js/jwt-decode.min.js"></script>
+  
   <script src="https://accounts.google.com/gsi/client" async defer></script>
 </body>
 </html>
