@@ -4,3 +4,5 @@ function decode(){
 var userObject = jwt_decode(response.credential);
 console.log(userObject);
 }
+
+export default decode;
