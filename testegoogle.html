@@ -15,15 +15,13 @@
 
   <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-  <script src="js/jwt-decode.min.js"> import jwt_decode from "jwt-decode"; </script>
-
 
   <script>
     function handleCredentialResponse(response) {
       console.log("Encoded JWT ID token: " + response.credential);
     }
 
-    
+
     window.onload = function () {
       google.accounts.id.initialize({
         client_id: "983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com",
