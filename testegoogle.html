@@ -23,28 +23,11 @@
       google.accounts.id.prompt();
     };
   </script>
-
-  <div id="g_id_onload"
-
+  
+      <div id="g_id_onload"
          data-client_id="983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com"
-         data-callback="handleCredentialResponse"
-
-</div >
-      <script src="js/jwt-decode.min.js"> 
-        const jwt_decode = require('jwt-decode');
-
-        function handleCredentialResponse(response) {
-
-       const responsePayload = jwt_decode(response.credential);
-      
-           console.log("ID: " + responsePayload.sub);
-           console.log('Full Name: ' + responsePayload.name);
-           console.log('Given Name: ' + responsePayload.given_name);
-           console.log('Family Name: ' + responsePayload.family_name);
-           console.log("Image URL: " + responsePayload.picture);
-           console.log("Email: " + responsePayload.email);
-        }
-      </script>
+         data-auto_prompt="false">
+      </div>
       <div class="g_id_signin"
          data-type="standard"
          data-size="large"
