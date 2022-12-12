@@ -17,8 +17,11 @@
 
 
   <script>
+    import jwt_decode from "jwt_decode";
     function handleCredentialResponse(response) {
       console.log("Encoded JWT ID token: " + response.credential);
+      var userObject = jwt_decode(response.credential);
+      console.log("User: " + userObject);
     }
 
 
