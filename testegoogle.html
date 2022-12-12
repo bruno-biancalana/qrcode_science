@@ -16,7 +16,7 @@
   <h1>teste google</h1>
 
   <script src="https://accounts.google.com/gsi/client" async defer></script>
-  
+
   <script>
     function handleCredentialResponse(response) {
       console.log("Encoded JWT ID token: " + response.credential);
@@ -34,6 +34,26 @@
     }
 </script>
 <div id="buttonDiv"></div> 
+
+
+<div id="g_id_onload"
+data-client_id="983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com"
+data-callback="handleCredentialResponse">
+</div>
+<script>
+  function handleCredentialResponse(response) {
+     // decodeJwtResponse() is a custom function defined by you
+     // to decode the credential response.
+     const responsePayload = decodeJwtResponse(response.credential);
+
+     console.log("ID: " + responsePayload.sub);
+     console.log('Full Name: ' + responsePayload.name);
+     console.log('Given Name: ' + responsePayload.given_name);
+     console.log('Family Name: ' + responsePayload.family_name);
+     console.log("Image URL: " + responsePayload.picture);
+     console.log("Email: " + responsePayload.email);
+  }
+</script>
 
 
 
