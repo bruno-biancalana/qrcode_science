@@ -10,8 +10,12 @@
 </head>
 
 <body>
+  <script src="js/jwt-decode.min.js"> 
+  const jwt_decode = require('jwt-decode');
+  </script>
+  
   <h1>teste google</h1>
-  <script>
+  <!--<script>
     window.onload = function () {
       google.accounts.id.initialize({
         client_id: '983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com',
@@ -19,7 +23,7 @@
       });
       google.accounts.id.prompt();
     };
-  </script>
+  </script>-->
 
   <div id="g_id_onload"
          data-client_id="983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com"
@@ -30,7 +34,7 @@
         function handleCredentialResponse(response) {
            // decodeJwtResponse() is a custom function defined by you
            // to decode the credential response.
-           //const responsePayload = decodeJwtResponse(response.credential);
+           const responsePayload = decodeJwtResponse(response.credential);
       
            console.log("ID: " + responsePayload.sub);
            console.log('Full Name: ' + responsePayload.name);
