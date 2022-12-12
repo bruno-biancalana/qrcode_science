@@ -17,6 +17,11 @@
 
   <script src="https://accounts.google.com/gsi/client" async defer></script>
 
+  <div id="g_id_onload"
+     data-client_id="983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com"
+     data-callback="handleCredentialResponse">
+</div>
+
   <script>
     function handleCredentialResponse(response) {
       console.log("Encoded JWT ID token: " + response.credential);
@@ -28,7 +33,7 @@
       console.log("Image URL: " + responsePayload.picture);
       console.log("Email: " + responsePayload.email);
     }
-    
+
     window.onload = function () {
       google.accounts.id.initialize({
         client_id: "983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com",
