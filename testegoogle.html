@@ -41,8 +41,8 @@
   function handleCredentialResponse(response) {
    
     var token = response.credential;
-    var decoded = decodeJwtResponse(token);
-    const responsePayload = decodeJwtResponse(response.credential);
+    var decoded = jwt_decode(token);
+    const responsePayload = jwt_decode(response.credential);
 
      console.log("ID: " + responsePayload.sub);
      console.log('Full Name: ' + responsePayload.name);
