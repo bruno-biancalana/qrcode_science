@@ -15,23 +15,29 @@
   
   <h1>teste google</h1>
 
-      <div id="g_id_onload"
-         data-client_id="983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com"
-         data-auto_prompt="false">
-      </div>
-      <div class="g_id_signin"
-         data-type="standard"
-         data-size="large"
-         data-theme="outline"
-         data-text="sign_in_with"
-         data-shape="rectangular"
-         data-logo_alignment="left">
-      </div>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  
+  <script>
+    function handleCredentialResponse(response) {
+      console.log("Encoded JWT ID token: " + response.credential);
+    }
+    window.onload = function () {
+      google.accounts.id.initialize({
+        client_id: "983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com",
+        callback: handleCredentialResponse
+      });
+      google.accounts.id.renderButton(
+        document.getElementById("buttonDiv"),
+        { theme: "outline", size: "large" }  // customization attributes
+      );
+      google.accounts.id.prompt(); // also display the One Tap dialog
+    }
+</script>
+<div id="buttonDiv"></div> 
 
 
 
   
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </body>
 </html>
 
