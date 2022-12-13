@@ -34,11 +34,9 @@
 
         return JSON.parse(jsonPayload);
         }
-        
-        console.log("teste3");
+
         const responsePayload = parseJwt(response.credential);
 
-        console.log("teste2");
         console.log("ID: " + responsePayload.sub);
         console.log('Full Name: ' + responsePayload.name);
         console.log('Given Name: ' + responsePayload.given_name);
