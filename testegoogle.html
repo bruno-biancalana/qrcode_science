@@ -28,8 +28,9 @@
     }).join(''));
 
     return JSON.parse(jsonPayload);
-    console.log(jsonPayload);
-}
+} 
+    parseJwt(response.credential);
+    console.log("teste " + response.credential);
 
     window.onload = function () {
       google.accounts.id.initialize({
