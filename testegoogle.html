@@ -28,8 +28,8 @@
 
   function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: teste a " + response.credential);
-    parseJwt(response.credential);
-    console.log('teste' + response.credential);
+    var userObject= parseJwt(response.credential);
+    console.log('teste2' + userObject);
     }
     
 
