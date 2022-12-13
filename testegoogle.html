@@ -13,8 +13,13 @@
   
   <h1>teste google</h1>
 
-  <script src="https://accounts.google.com/gsi/client" async defer> 
-    import jwt_decode from "jwt-decode;"
+    <script src="https://accounts.google.com/gsi/client" async defer> </script>
+
+    <script>
+    function handleCredentialResponse(response) {
+    console.log("Encoded JWT ID token: teste a " + response.credential);
+
+    }
 
     window.onload = function () {
       google.accounts.id.initialize({
@@ -28,11 +33,7 @@
       google.accounts.id.prompt(); // also display the One Tap dialog
     }
   
-    function handleCredentialResponse(response) {
-    console.log("Encoded JWT ID token: teste a " + response.credential);
-    var userObject =  jwt_decode(response.credential); 
-    console.log(userObject);
-    }
+
 
 </script>
 <div id="buttonDiv"></div> 
