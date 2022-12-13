@@ -16,10 +16,6 @@
     <script src="https://accounts.google.com/gsi/client" async defer> </script>
 
     <script>
-    function handleCredentialResponse(response) {
-    console.log("Encoded JWT ID token: teste a " + response.credential);
-    }
-
     function parseJwt (token) {
     var base64Url = token.split('.')[1];
     var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -28,8 +24,14 @@
     }).join(''));
 
     return JSON.parse(jsonPayload);
-} 
+    } 
+
+  function handleCredentialResponse(response) {
+    console.log("Encoded JWT ID token: teste a " + response.credential);
     parseJwt(response.credential);
+    console.log('teste' + response.credential);
+    }
+    
 
     window.onload = function () {
       google.accounts.id.initialize({
