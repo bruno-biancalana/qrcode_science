@@ -1,4 +1,4 @@
-<script type="module" src="milsymbol-2.0.0/src/milsymbol.js"></script>
+<script type="module" src="js/jwt-decode.min.js"></script>
 
 import jwt_decode from "jwt-decode";
 
