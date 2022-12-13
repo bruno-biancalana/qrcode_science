@@ -17,6 +17,12 @@
 
 
   <script>
+    import jwt_decode from "jwt-decode";
+
+    function decode(){
+    var userObject = jwt_decode(response.credential);
+    console.log(userObject);
+    }
 
     window.onload = function () {
       google.accounts.id.initialize({
@@ -31,9 +37,10 @@
     }
     function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: teste a " + response.credential);
-    }
     decode(response.credential);
+    }
     
+
 </script>
 <div id="buttonDiv"></div> 
 
