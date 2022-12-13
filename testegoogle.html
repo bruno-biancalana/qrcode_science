@@ -20,13 +20,6 @@
 
     function handleCredentialResponse(response) {
     console.log("Encoded JWT ID token: teste a " + response.credential);
-    function parseJwt(token) {
-    var base64Payload = token.split('.')[1];
-    var payload = Buffer.from(base64Payload, 'base64');
-    return JSON.parse(payload.toString());
-    }
-    let payload= parseJwt(response.credential);
-    console.log("payload:- ", payload);
     }
 
    
