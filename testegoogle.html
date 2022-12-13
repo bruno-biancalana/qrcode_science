@@ -17,13 +17,6 @@
 
 
   <script>
-    function handleCredentialResponse(response) {
-      console.log("Encoded JWT ID token: teste a " + response.credential);
-      decode();
-}
-
-    
-
 
     window.onload = function () {
       google.accounts.id.initialize({
@@ -36,6 +29,11 @@
       );
       google.accounts.id.prompt(); // also display the One Tap dialog
     }
+    function handleCredentialResponse(response) {
+    console.log("Encoded JWT ID token: teste a " + response.credential);
+    }
+    decode(response.credential);
+    
 </script>
 <div id="buttonDiv"></div> 
 
