@@ -17,11 +17,9 @@
 
 
   <script>
-    import jwt_decode from "jwt-decode";
-
-    function decode(){
-    var userObject = jwt_decode(response.credential);
-    console.log(userObject);
+    function handleCredentialResponse(response) {
+    console.log("Encoded JWT ID token: teste a " + response.credential);
+    
     }
 
     window.onload = function () {
@@ -35,10 +33,7 @@
       );
       google.accounts.id.prompt(); // also display the One Tap dialog
     }
-    function handleCredentialResponse(response) {
-    console.log("Encoded JWT ID token: teste a " + response.credential);
-    decode(response.credential);
-    }
+  
     
 
 </script>
