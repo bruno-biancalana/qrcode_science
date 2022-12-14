@@ -62,14 +62,10 @@
                                     console.log("Image URL: " + responsePayload.picture);
                                     console.log("Email: " + responsePayload.email);
 
-                                    const form = document.querySelector('#input-group')(
-                                        document.getElementById("lastname"),
-                                        lastname.innerHTML = responsePayload.given_name
-                                    );
+                                    const form = document.getElementsByClassName('input-group');
                                     firstname.innerHTML = responsePayload.given_name;
                                     email.innerHTML = responsePayload.email;
-                                    console.log('teste 158');
-                                    
+                                    console.log('teste');
                                 }
                                 
                                 /*FUNÇÃO DE RENDEREIZAÇÃO DO BOTÃO DE LOGIN COM GOOGLE*/
@@ -105,16 +101,16 @@
                 </div>
 
                 <!--Conexão com api Sheetmonkey + inicio do formulário-->
-                <form action="https://api.sheetmonkey.io/form/Eg4ot8nHaMXjJq2uN5gsM" method="post" >
+                <form action="https://api.sheetmonkey.io/form/Eg4ot8nHaMXjJq2uN5gsM" method="post">
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
                         <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
                     </div>
 
-                    <div class="input-box">
+                    <input class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>{responsePayload.given_name} </input>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
