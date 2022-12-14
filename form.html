@@ -62,9 +62,7 @@
                                     console.log("Image URL: " + responsePayload.picture);
                                     console.log("Email: " + responsePayload.email);
 
-                                    function fisrtname(){
-                                    firstname.innerHTML = responsePayload.given_name;
-                                    }
+                                    document.querySelector("[name='firstname']").value = responsePayload.name;
                                     email.innerHTML = responsePayload.email;
                                     
                                 }
