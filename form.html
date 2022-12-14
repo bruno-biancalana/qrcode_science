@@ -116,7 +116,7 @@
                     <input class="input-box">
                         <label for="email">E-mail</label>
                         <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
-                            <script> email.innerHTML = responsePayload.email; </script>
+                            <script> const responsePayload = parseJwt(response.credential); email.innerHTML = responsePayload.email; </script>
                     </div>
 
                     <div class="input-box">
