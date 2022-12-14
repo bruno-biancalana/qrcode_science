@@ -28,6 +28,22 @@
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
+                        <script>
+                        window.onload = function () {
+                            google.accounts.id.initialize({
+                              client_id: "983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com",
+                              callback: handleCredentialResponse
+                            });
+                            google.accounts.id.renderButton(
+                              document.getElementById("buttonDiv"),
+                              { theme: "outline", size: "large" }  // customization attributes
+                            );
+                            google.accounts.id.prompt(); // also display the One Tap dialog
+                          }
+                        
+                        </script>
+                        <div id="buttonDiv"></div> 
+
                         
                         <!--******** BLOCO COMENTADO PARA FUTURA IMPLEMENTAÇÃO ********
                         
@@ -78,8 +94,12 @@
     <i style="margin-top:16px" class="fa fa-whatsapp"></i>
     </a>
     <!--/Bloco Api whatsapp-->
+
     <script src="/assets/Js/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer> </script>
+    
+    
 </body>
 
 </html>
