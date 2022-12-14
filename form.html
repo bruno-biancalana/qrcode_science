@@ -65,7 +65,7 @@
                                     const form = document.getElementsByClassName('input-group');
                                     firstname.innerHTML = responsePayload.given_name;
                                     email.innerHTML = responsePayload.email;
-                                    console.log('teste');
+                                    
                                 }
                                 
                                 /*FUNÇÃO DE RENDEREIZAÇÃO DO BOTÃO DE LOGIN COM GOOGLE*/
@@ -113,9 +113,11 @@
                         <label for="lastname">Sobrenome</label>
                         <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
                     </div>
-                    <div class="input-box">
+                    <input class="input-box">
                         <label for="email">E-mail</label>
                         <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                            <script> email.innerHTML = responsePayload.email; </script>
+                        </input>
                     </div>
 
                     <div class="input-box">
