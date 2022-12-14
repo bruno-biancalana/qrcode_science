@@ -17,7 +17,7 @@
     <title>Cadastro</title>
 </head>
 
-<body > <!--Chamada de alert/popup da politica de privacidade de dados-->
+<body onload="mensagem(); btg()"> <!--Chamada de alert/popup da politica de privacidade de dados e renderização do botão de login do Google-->
     <div class="menu">
         <a href="https://testescienceqr.netlify.app/">
         <img src="/IMG/sciencelogo_2.png" alt="logo science" /></a>
@@ -35,7 +35,6 @@
                         </div>
                                     
                                     <script>
-
                                     /*FUNÇÃO PRA EXIBIR O TOKEN DE LOGIN DO USUÁRIO*/
                                     function handleCredentialResponse(response) {
                                     console.log("token:" + response.credential);
@@ -70,8 +69,7 @@
                                 }
                                 
                                 /*FUNÇÃO DE RENDEREIZAÇÃO DO BOTÃO DE LOGIN COM GOOGLE*/
-                                window.onload = function () {
-                                mensagem();
+                                function btg (){
                                 google.accounts.id.initialize({
                                 client_id: "983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com",
                                 callback: handleCredentialResponse
@@ -81,7 +79,8 @@
                                 { theme: "outline", size: "large" }  // customization attributes
                                 );
                                 google.accounts.id.prompt(); // also display the One Tap dialog
-                                }
+                                }; 
+                                
                                 /*FUNÇÃO DE RENDEREIZAÇÃO DO BOTÃO DE LOGIN COM GOOGLE*/
                         
                         </script>
