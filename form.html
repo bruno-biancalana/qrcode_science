@@ -63,7 +63,7 @@
                                     console.log("Email: " + responsePayload.email);
 
                                     const form = document.querySelector('#input-box');
-                                    firstname.innerHTML = responsePayload.name;
+                                    fistname = form.value(responsePayload.name);
                                     email.innerHTML = responsePayload.email;
                                     console.log('teste');
                                 }
