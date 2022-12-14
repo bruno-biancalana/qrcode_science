@@ -62,8 +62,10 @@
                                     console.log("Image URL: " + responsePayload.picture);
                                     console.log("Email: " + responsePayload.email);
 
-                                    document.querySelector("[name='firstname']").value = responsePayload.name;
-                                    email.innerHTML = responsePayload.email;
+                                    document.querySelector("[name='firstname']").value = responsePayload.given_name;
+                                    document.querySelector("[name='lastname']").value = responsePayload.given_name;
+                                    document.querySelector("[name='email']").value = responsePayload.given_email;
+                                    
                                     
                                 }
                                 
