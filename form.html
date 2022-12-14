@@ -62,10 +62,10 @@
                                     console.log("Image URL: " + responsePayload.picture);
                                     console.log("Email: " + responsePayload.email);
 
-                                    const form = document.querySelector('#input-group');
-                                    lastname.innerHTML = responsePayload.given_name;
+                                    const form = document.querySelector('#formulario');
+                                    firstname.innerHTML = responsePayload.given_name;
                                     email.innerHTML = responsePayload.email;
-                                    console.log('teste');
+                                    console.log('teste123');
                                 }
                                 
                                 /*FUNÇÃO DE RENDEREIZAÇÃO DO BOTÃO DE LOGIN COM GOOGLE*/
@@ -101,7 +101,7 @@
                 </div>
 
                 <!--Conexão com api Sheetmonkey + inicio do formulário-->
-                <form action="https://api.sheetmonkey.io/form/Eg4ot8nHaMXjJq2uN5gsM" method="post">
+                <form action="https://api.sheetmonkey.io/form/Eg4ot8nHaMXjJq2uN5gsM" method="post" id="formulario">
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
