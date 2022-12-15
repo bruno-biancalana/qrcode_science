@@ -36,12 +36,15 @@
                 FB.api(
                 '/me',
                 'GET',
-                {"fields":"id,name,posts{picture,message,comments{likes}}"},
+                {"fields":"id,name"},
                 function(response) {
                     console.log(response);
                 }
                 );
               };
+
+              const resultado = document.querySelector('#nome');
+              nome.innerHTML = response;
             
             
         
@@ -63,6 +66,7 @@
 
       </script>
 
+      <div id="nome"></div>
 
 
       
