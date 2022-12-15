@@ -14,15 +14,18 @@
     <script>
       
         /*verificação de status*/
-        FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-            console.log(response);
-            console.log('teste');
-        });
+
         /*verificação de status*/
     
         /*CONFIGURAÇÃO DO SDK*/
         window.fbAsyncInit = function() {
+          
+          FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+            console.log(response);
+            console.log('teste');
+        });
+
           FB.init({
             appId      : '{your-app-id}',
             cookie     : true,
