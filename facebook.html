@@ -39,16 +39,16 @@
           js.src = "https://connect.facebook.net/en_US/sdk.js";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-      </script>
 
-      <script>
-      function triggerLoginCheck() {       
+        function triggerLoginCheck() {       
        FB.getLoginStatus(function(response) {
        statusChangeCallback(response);
        console.log(response);  
        });
 }
       </script>
+
+
 
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
