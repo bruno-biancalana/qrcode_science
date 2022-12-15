@@ -26,9 +26,9 @@
             version    : 'v15.0'
           });
             
-          FB.AppEvents.logPageView();   
-            
-        };
+          FB.getLoginStatus(function(response) {
+          statusChangeCallback(response);
+      });
         
 
         (function(d, s, id){
