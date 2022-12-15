@@ -27,7 +27,13 @@
             version    : 'v15.0'
           });
 
-                        FB.api(
+                        FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                  console.log(response.authResponse.accessToken);
+                }
+              });
+
+                FB.api(
                 '/me',
                 'GET',
                 {"fields":"id,name,posts{picture,message,comments{likes}}"},
