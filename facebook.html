@@ -26,11 +26,10 @@
             version    : 'v15.0'
           });
             
-          FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
-          });}
+          FB.AppEvents.logPageView();   
+            
+        };
         
-
         (function(d, s, id){
           var js, fjs = d.getElementsByTagName(s)[0];
           if (d.getElementById(id)) {return;}
@@ -38,6 +37,12 @@
           js.src = "https://connect.facebook.net/en_US/sdk.js";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+        
+          FB.getLoginStatus(function(response) {
+              statusChangeCallback(response);
+              console.log(response);
+              console.log('teste');
+          });
       </script>
 
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
