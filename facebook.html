@@ -25,6 +25,8 @@
             xfbml      : true,
             version    : 'v15.0'
           });
+
+          triggerLoginCheck();
             
           FB.AppEvents.logPageView();   
             
@@ -37,12 +39,15 @@
           js.src = "https://connect.facebook.net/en_US/sdk.js";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-        
-          FB.getLoginStatus(function(response) {
-              statusChangeCallback(response);
-              console.log(response);
-              console.log('teste');
-          });
+      </script>
+
+      <script>
+      function triggerLoginCheck() {       
+       FB.getLoginStatus(function(response) {
+       statusChangeCallback(response);
+       console.log(response);  
+       });
+}
       </script>
 
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
