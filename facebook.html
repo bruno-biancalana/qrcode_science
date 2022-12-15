@@ -39,6 +39,7 @@
                 {"fields":"id,name, email"},
                 function(response) {
                     console.log(response);
+                    document.querySelector("[name='nome']").value = response.name;
                 }
                 );
               };            
@@ -53,7 +54,7 @@
 
       </script>
 
-      <div id="nome"></div>
+      <div name="name"></div>
 
 
       
