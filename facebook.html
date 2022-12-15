@@ -9,6 +9,7 @@
     <h1>teste facebook</h1>
     
 <body>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
   <div id="fb-root"></div>
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v15.0&appId=533529271802232&autoLogAppEvents=1" nonce="xrvTyFhi"></script>
 
@@ -25,10 +26,18 @@
             xfbml      : true,
             version    : 'v15.0'
           });
+
+                        FB.api(
+                '/me',
+                'GET',
+                {"fields":"id,name,posts{picture,message,comments{likes}}"},
+                function(response) {
+                    console.log(response);
+                }
+                );
+              };
             
-          FB.AppEvents.logPageView();   
             
-        };
         
         (function(d, s, id){
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -45,12 +54,12 @@
        console.log(response);  
        });
         }*/
-        
+
       </script>
 
 
 
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+      
 
 </body>
 </html>
