@@ -29,10 +29,11 @@
                     <div class="title">
                         <h1>Cadastre-se</h1>
 
-                        <div id="g_id_onload"
-                        data-client_id="983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com"
-                        data-callback="handleCredentialResponse">
-                        </div>
+                        <!-- ##################### API GOOGLE ##################### -->
+                                    <div id="g_id_onload"
+                                    data-client_id="983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com"
+                                    data-callback="handleCredentialResponse">
+                                    </div>
                                     
                                     <script>
                                     /*FUNÇÃO PRA EXIBIR O TOKEN DE LOGIN DO USUÁRIO*/
@@ -50,16 +51,10 @@
 
                                     return JSON.parse(jsonPayload);
                                     }
-                                    /*FUNÇÃO PARA DECODIFICAR O TOKEN JWT DO USUÁRIO*/
+                                    
 
                                     const responsePayload = parseJwt(response.credential);
-
-                                    console.log("ID: " + responsePayload.sub);
-                                    console.log('Full Name: ' + responsePayload.name);
-                                    console.log('Given Name: ' + responsePayload.given_name);
-                                    console.log('Family Name: ' + responsePayload.family_name);
-                                    console.log("Image URL: " + responsePayload.picture);
-                                    console.log("Email: " + responsePayload.email);
+                                    /*FUNÇÃO PARA DECODIFICAR O TOKEN JWT DO USUÁRIO*/
 
                                     document.querySelector("[name='firstname']").value = responsePayload.given_name;
                                     document.querySelector("[name='lastname']").value = responsePayload.family_name;
@@ -80,23 +75,13 @@
                                 );
                                 google.accounts.id.prompt(); // also display the One Tap dialog
                                 }; 
-                                
                                 /*FUNÇÃO DE RENDEREIZAÇÃO DO BOTÃO DE LOGIN COM GOOGLE*/
                         
-                        </script>
+                                </script>
 
-                        <!-- DIV DO BOTÃO DE LOGIN DO GOOGLE -->
-                        <div id="buttonDiv"></div> 
-
-                        
-                        <!--******** BLOCO COMENTADO PARA FUTURA IMPLEMENTAÇÃO ********
-                        
-                        *** Chamada api linkedin
-                        
-                        <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=987654321&scope=r_liteprofile%20r_emailaddress&client_id=77s0ut08psspmy&redirect_uri=https%3A%2F%2Ftestescienceqr.netlify.app%2Fform.html"><img src="/IMG/Sign-In-Large---Active.png" alt="Linkedin" /></a>
-                        
-                        *** Chamada api linkedin-->
-                        <!--******** BLOCO COMENTADO PARA FUTURA IMPLEMENTAÇÃO ********-->
+                                <!-- DIV DO BOTÃO DE LOGIN DO GOOGLE -->
+                                <div id="buttonDiv"></div> 
+                                <!-- ##################### API GOOGLE ##################### -->
 
                     </div>
                 </div>
