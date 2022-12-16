@@ -29,7 +29,7 @@
                         /*FUNÇÃO PARA DECODIFICAR O TOKEN JWT DO USUÁRIO*/
                         console.log('Nome: ' + responsePayload.given_name);
                         console.log('Sobrenome: ' + responsePayload.family_name);
-                        console.log('Email; ' + responsePayload.email);
+                        console.log('Email: ' + responsePayload.email);
 
                         /* BLOCO QUE ESCREVE OS DADOS DO LOGIN NO FORMULÁRIO */ 
                         document.querySelector("[name='firstname']").value = responsePayload.given_name; //PRIMEIRO NOME
