@@ -45,7 +45,7 @@
                     /*FUNÇÃO DE RENDEREIZAÇÃO DO BOTÃO DE LOGIN COM GOOGLE*/
                     function btg (){
                     google.accounts.id.initialize({
-                    client_id: "983351112682-ipf11esoab6napoutemsco0pvqdrn8fa.apps.googleusercontent.com",
+                    client_id: "514827410155-jdadmhecqh2b1jlstsn7shm5a2uhgekg.apps.googleusercontent.com",
                     callback : handleCredentialResponse
                     });
                     google.accounts.id.renderButton(
