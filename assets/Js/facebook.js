@@ -18,10 +18,12 @@ window.fbAsyncInit = function() {
           {"fields":"id,name, email"},
           function(response) {
               console.log(response);
-              const teste = document.querySelector('#teste');
-              teste.innerHTML = response.name;
-              teste1.innerHTML = response.id;
-              teste2.innerHTML = response.email;
+
+                        /* BLOCO QUE ESCREVE OS DADOS DO LOGIN NO FORMULÁRIO */ 
+                        document.querySelector("[name='teste']").value = response.name; //PRIMEIRO NOME
+                        document.querySelector("[name='teste1']").value  = response.id; //SEGUNDO NOME
+                        document.querySelector("[name='teste2']").value     = response.email; //EMAIL
+                        /* BLOCO QUE ESCREVE OS DADOS DO LOGIN NO FORMULÁRIO */               
           }
           );
         };            
