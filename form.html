@@ -17,7 +17,7 @@
     <title>Cadastro</title>
 </head>
 
-<body onload="mensagem(); btg()"> <!--Chamada de alert/popup da politica de privacidade de dados e renderização do botão de login do Google-->
+<body onload="mensagem(); btg(); fbAsyncInit()"> <!--Chamada de alert/popup da politica de privacidade de dados e renderização do botão de login do Google-->
     <div class="menu">
         <a href="https://testescienceqr.netlify.app/">
         <img src="/IMG/sciencelogo_2.png" alt="logo science" /></a>
@@ -52,7 +52,7 @@
 
                             
                             <script>
-                                window.fbAsyncInit = function() {
+                                function fbAsyncInit() {
                                 FB.init({
                                     appId      : '533529271802232',
                                     cookie     : true,
