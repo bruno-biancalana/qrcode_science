@@ -35,6 +35,9 @@
           {"fields":"id,name, email"},
           function(response) {
               console.log(response);
+              console.log(response.name);
+              console.log(response.id);
+              console.log(response.email);
               
               const teste = document.querySelector('#teste');
               teste.innerHTML = response.name;
