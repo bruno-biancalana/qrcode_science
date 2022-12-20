@@ -17,7 +17,7 @@
     <title>Cadastro</title>
 </head>
 
-<body onload="mensagem(); btg(); fbAsyncInit()"> <!--Chamada de alert/popup da politica de privacidade de dados e renderização do botão de login do Google-->
+<body onload="mensagem(); btg()"> <!--Chamada de alert/popup da politica de privacidade de dados e renderização do botão de login do Google-->
     <div class="menu">
         <a href="https://testescienceqr.netlify.app/">
         <img src="/IMG/sciencelogo_2.png" alt="logo science" /></a>
@@ -43,54 +43,7 @@
                                      <!--DIV DO BOTÃO DE LOGIN DO GOOGLE-->
 
                         <!-- ##################### API GOOGLE ##################### -->
-                         <!-- JDK FACEBOOK-->
-                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-                        <div id="fb-root"></div>
-                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v15.0&appId=533529271802232&autoLogAppEvents=1" nonce="xrvTyFhi"></script>
-
-                            <div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="true"></div>
-
-                            
-                            <script>
-                                function fbAsyncInit() {
-                                FB.init({
-                                    appId      : '533529271802232',
-                                    cookie     : true,
-                                    xfbml      : true,
-                                    version    : 'v15.0'
-                                });
-
-                                                FB.getLoginStatus(function(response) {
-                                        if (response.status === 'connected') {
-                                        console.log(response.authResponse.accessToken);
-                                        }
-                                    });
-
-                                        FB.api(
-                                        '/me',
-                                        'GET',
-                                        {"fields":"id,name, email"},
-                                        function(response) {
-                                            console.log(response);
-                                            const teste = document.querySelector('#teste');
-                                            teste.innerHTML = response.name;
-                                            teste1.innerHTML = response.id;
-                                            teste2.innerHTML = response.email;
-                                        }
-                                        );
-                                    };            
-                                
-                                    (function(d, s, id){
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) {return;}
-                                    js = d.createElement(s); js.id = id;
-                                    js.src = "https://connect.facebook.net/en_US/sdk.js";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                    }(document, 'script', 'facebook-jssdk'));
-
-                            </script>
-
-
+                    
                     </div>
                 </div>
 
