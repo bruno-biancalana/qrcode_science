@@ -35,10 +35,16 @@
           {"fields":"id,name, email"},
           function(response) {
               console.log(response);
+              /*
               const teste = document.querySelector('#teste');
               teste.innerHTML = response.name;
               teste1.innerHTML = response.id;
-              teste2.innerHTML = response.email;
+              teste2.innerHTML = response.email;*/
+                                      /* BLOCO QUE ESCREVE OS DADOS DO LOGIN NO FORMULÁRIO */ 
+                        document.querySelector("[name='teste']").value = response.name; //PRIMEIRO NOME
+                        document.querySelector("[name='teste1']").value  = response.id; //SEGUNDO NOME
+                        document.querySelector("[name='teste2']").value     = response.email; //EMAIL
+                        /* BLOCO QUE ESCREVE OS DADOS DO LOGIN NO FORMULÁRIO */ 
               
           }
           );
@@ -53,9 +59,9 @@
       }(document, 'script', 'facebook-jssdk'));
       </script>
 
-      <div id="teste"></div>
-      <div id="teste1"></div>
-      <div id="teste2"></div>
+      <div name="teste"></div>
+      <div name="teste1"></div>
+      <div name="teste2"></div>
 
 
       
