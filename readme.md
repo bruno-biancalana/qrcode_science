@@ -12,6 +12,7 @@
 <p align="center">
   Página de captação de dados de possiveis voluntários a estudos clinicos. O formulário pode ser preenchido manualmente pelo usuário ou através de login da conta do Google, que requisita as informações necessárias via api.
   <ul>
+   <li>Url: https://testescienceqr.netlify.app </li>
    <li>Pop Ups feitos com o Sweet Alert (https://sweetalert2.github.io).</li>
    <li>Login do Goggle com JS e HTML/CSS, baseado na documentação mais recente do google - dez/22 (https://developers.google.com/identity/gsi/web/guides/overview)</li>
    <li>Informações direcionadas pela api "SHEET MONKEY" (https://sheetmonkey.io).</li>
