@@ -10,7 +10,7 @@
  <img src="https://img.shields.io/badge/Js-yellow"/>
 </p>
 <p align="center">
-  Página de captação de dados de possiveis voluntários a estudos clinicos. O formulário pode ser preenchido manualmente pelo usuário ou através de login da conta do Google, que requisita as informações necessárias via api.
+  Página de captação de dados de possiveis voluntários a estudos clinicos. O formulário pode ser preenchido manualmente pelo usuário ou através de login da conta do Google, que requisita as informações necessárias via api. As informações são armazenadas em uma Google Sheet.
   <ul>
    <li> :link: Url: https://testescienceqr.netlify.app </li>
    <li> :bell: Pop Ups feitos com o Sweet Alert (https://sweetalert2.github.io).</li>
