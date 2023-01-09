@@ -112,7 +112,7 @@ body {
     color: #fff;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1500px) {
     .continue-button button {
         margin-top: 0.5rem;
     }
