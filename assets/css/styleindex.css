@@ -17,13 +17,13 @@ body {
     justify-content: center;
 }
 
-.science-wrapper {
+/*.science-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
     width: 60%;
     height: 100vh;
-}
+}*/
 
 .index-image {
     display: flex;
@@ -131,16 +131,16 @@ body {
 /* media queries */
 
 
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
     .science-wrapper {
         width: 90%;
     }
-}
+}*/
 
 @media (max-width: 650px) {
-    .science-wrapper {
+   /* .science-wrapper {
         width: 90%;
-    }
+    }*/
 
     .index-image {
         display: none;
